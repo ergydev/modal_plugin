@@ -35,3 +35,46 @@ The simplest approach is to add `onClick={handleOpenModal}` on the DOM element t
 Closing 
 Similar to how we did with the opening we'll add `onClose={handleCloseModal}` if the modal it's already open. 
 
+Propieties 
+'open' 
+Type : boolean
+Description : Propriety to control if the modal is open or close. If 'true', the modal will be displayed. If 'false', the modal is hidden.
+
+'onClose'
+type: function
+Description : We call this function when the modal need to be closed. This is used with a closing event like a closing button or a click outside the modal. 
+
+Example : 
+
+```
+import React, { useState } from 'react';
+import Modal from 'mon-plugin-modal-react';
+
+function MyComponent() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
+  return (
+    <div>
+      <button onClick={handleOpenModal}>Open the modal</button>
+      {modalOpen && (
+        <Modal onClose={handleCloseModal}>
+          {/* modal content */}
+          <h2>Modal Title</h2>
+          <p>modal content...</p>
+        </Modal>
+      )}
+    </div>
+  );
+}
+
+export default MyComponent;
+
+```
