@@ -14,7 +14,7 @@ npm install modal_plugin
 Utilisation 
 
 You need to create a state for the modal to know when it's open like this : 
-(`)const [modalOpen, setModalOpen] = useState(false)(`)
+`const [modalOpen, setModalOpen] = useState(false)`
 
 the you create a function to open the Modal and close it :
 const handleOpenModal = () => {
