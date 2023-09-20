@@ -13,7 +13,7 @@ To install this modal you can use npm :
 
 Or yarn : 
 
-`yarn add mon-plugin-modal-react`
+`yarn add modal_plugin_react_course`
 
 Utilisation 
 
@@ -52,7 +52,7 @@ Example :
 
 ```
 import React, { useState } from 'react';
-import Modal from 'mon-plugin-modal-react';
+import { Modal } from 'modal_plugin_react_course';
 
 function MyComponent() {
   const [modalOpen, setModalOpen] = useState(false);
