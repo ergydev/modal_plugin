@@ -9,7 +9,11 @@ Installation
 
 To install this modal you can use npm : 
 
-npm install modal_plugin
+`npm install modal_plugin_react_course`
+
+Or yarn : 
+
+`yarn add mon-plugin-modal-react`
 
 Utilisation 
 
